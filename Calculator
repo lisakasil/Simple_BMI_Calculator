@@ -1,0 +1,15 @@
+#Ask for height in inches (convert to float)
+height = float(input('Please enter your height in inches: '))
+
+#Ask for weight in lbs (convert to float)
+weight = float(input('Please enter your weight in pounds: '))
+
+#Calculate BMI using BMI = weight / (height ** 2) * 703
+bmi = weight / (height ** 2) * 703
+
+#Display BMI rounded to 1 decimal place
+print('BMI =', round(bmi, 1))
+
+#Height and weight must be converted from strings in order for calculations to work
+#Parentheses are used to order the operations
+#round(bmi, 1) rounds output to 1 decimal place
